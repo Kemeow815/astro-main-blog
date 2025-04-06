@@ -18,7 +18,7 @@ const { friends } = links
 const linksConfig = config.integ.links
 ---
 
-<PageLayout title='Links' {headings} info='/links'>
+<PageLayout title='友人馆' {headings} info='/links'>
   <p>怎么可能有顺序呢，当然是随机的~</p>
   <h2 id='common-links'>Common Links</h2>
   <FriendList list={friends[0]} />
@@ -40,7 +40,7 @@ const linksConfig = config.integ.links
 
     const fc = new FriendCircle()
     fc.init({
-      private_api_url: 'https://cworld-fc.netlify.app/',
+      private_api_url: 'https://friends.kemeow.top/',
       page_turning_number: 10,
       error_img: 'https://cravatar.cn/avatar/57d8260dfb55501c37dde588e7c3852c'
     })
@@ -48,7 +48,7 @@ const linksConfig = config.integ.links
   </script>
 
   <!-- apply-links -->
-  <h2 id='apply-links'>Apply Links</h2>
+  <h2 id='apply-links'>申请友链</h2>
   <p>本站信息如下：</p>
   <blockquote class='not-prose break-words border-s-4 ps-4'>
     <p>名称：<code>{linksConfig.applyTip.name}</code></p>

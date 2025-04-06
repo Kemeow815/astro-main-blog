@@ -1,8 +1,9 @@
-// @ts-check
 
 import eslint from '@eslint/js'
 import eslintPluginAstro from 'eslint-plugin-astro'
-import tseslint from 'typescript-eslint'
+// 明确指定导入的类型
+import tseslint from '@typescript-eslint/utils'
+
 
 export default [
   eslint.configs.recommended,

@@ -13,63 +13,76 @@ import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
 
 const languages = [
-  'Python',
-  'C',
-  'C++',
-  'C#',
+  // 'Python',
+  // 'C',
+  // 'C++',
+  // 'C#',
   'Java',
   'Html',
   'JavaScript',
-  'CSS',
-  'R',
-  'SQL',
-  'Go',
-  'Prolog',
-  'Php',
-  'Lua',
-  'Matlab',
-  'Rust',
-  'ShellScript'
+  'CSS'
+  // 'R',
+  // 'SQL',
+  // 'Go',
+  // 'Prolog',
+  // 'Php',
+  // 'Lua',
+  // 'Matlab',
+  // 'Rust',
+  // 'ShellScript'
 ]
 const frontend = [
   'TypeScript',
   'React',
-  'Redux',
+  'NextJS',
+  // 'Svelte',
+  'Vue3',
+  'Vue2',
+  'nuxt',
+  // 'Redux',
+  // 'Vuex',
+  // 'Redux',
   'Vue',
-  'Pinia',
+  // 'Pinia',
   'Vite',
   'Webpack',
   'Astro',
   'Hexo',
   'Hugo'
 ]
-const backend = ['Flask', 'Nginx', 'NextJS']
-const others = ['Qt', 'PyQt', 'Qml', 'Android', 'Unity', 'Jinja']
+const backend = ['NextJS']
+const others = ['Android', 'Unity', 'Web']
 
 const websiteList = [
   {
-    href: 'https://status.cworld0.com/',
+    href: 'https://status.kemeow.cn/',
     heading: 'Website status',
-    subheading: 'Record status of CWorld websites',
-    imagePath: '/src/assets/projects/site-status.png'
+    subheading: 'Record status of Ke Miao websites',
+    imagePath: '/src/assets/projects/status.png'
   },
   {
-    href: 'https://waline.cworld0.com/ui/login',
-    heading: 'Waline comment system',
-    subheading: 'Back-end control comment panel',
-    imagePath: '/src/assets/projects/site-waline.png'
+    href: 'https://myblog.kemeow.top/',
+    heading: 'Github issues blog',
+    subheading: 'main blog',
+    imagePath: '/src/assets/projects/github-issues-blog.png'
   },
   {
-    href: 'https://onedrive.cworld0.com/',
-    heading: 'Onedrive share',
-    subheading: 'A share space for onedrive',
-    imagePath: '/src/assets/projects/site-onedrive.png'
+    href: 'https://music.kemiao.online/',
+    heading: '克喵の音乐馆',
+    subheading: 'A music page for netease',
+    imagePath: '/src/assets/projects/music-page.png'
   },
   {
-    href: 'https://onedrive.cworld0.com/',
-    heading: 'Umami',
-    subheading: 'Web analytics',
-    imagePath: '/src/assets/projects/site-umami.png'
+    href: 'https://img.kemiaosw.top/',
+    heading: '图床',
+    subheading: 'cloudflare image worker',
+    imagePath: '/src/assets/projects/img-page.png'
+  },
+  {
+    href: 'https://shuoshuo.kemiao.online/',
+    heading: '说说',
+    subheading: 'A personal shuoshuo by telegram',
+    imagePath: '/src/assets/projects/tg-shuoshuo.png'
   }
 ]
 
@@ -94,7 +107,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           <Label title='China'>
             <Icon name='location' class='size-5' slot='icon' />
           </Label>
-          <Label title='Github' as='a' href='https://github.com/cworld1' target='_blank'>
+          <Label title='Github' as='a' href='https://github.com/Kemeow815' target='_blank'>
             <Icon name='github' class='size-5' slot='icon' />
           </Label>
         </div>
@@ -102,18 +115,17 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
-      <Section title='About'>
-        <p class='text-muted-foreground'>Developer / Designer</p>
+      <Section title='关于'>
+        <p class='text-muted-foreground'>站长 / 克喵</p>
         <p class='text-muted-foreground'>
-          Full-time undergraduate student majoring in Computer Science, skilled in big data and
-          full-stack web development. Passionate about UI/UX design and photography during leisure
-          time.
+          一个普通的在南京就读的双非学校的大二学生，致力于分享资源和生活点滴。
+          分享的资源和文章均来自互联网，如有侵权，请联系我删除。
         </p>
         <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
       {
         allPostsByDate.length > 0 && (
-          <Section title='Posts'>
+          <Section title='文章'>
             <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
               {allPostsByDate.map((p) => (
                 <li class='flex flex-col gap-x-2 sm:flex-row'>
@@ -125,13 +137,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           </Section>
         )
       }
-      <Section title='Education'>
+      <Section title='学校'>
         <Card
           as='a'
-          heading='Southwestern University'
-          subheading='Full-time undergraduate student'
-          date='August 2021 - July 2025'
-          href='http://swu.edu.cn/'
+          heading='南京工业职业技术大学'
+          subheading='普通大二学生'
+          date='September 2023 - June 2027'
+          href='https://www.niit.edu.cn/'
         />
       </Section>
 
@@ -150,7 +162,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         </div>
       </Section>
 
-      <Section title='Certifications'>
+      <!-- <Section title='Certifications'>
         <Card
           as='a'
           heading='Mathematical Modeling Competition'
@@ -158,7 +170,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           date='October 2023'
           href='http://www.mcm.edu.cn'
         />
-      </Section>
+      </Section> -->
 
       <Section title='Skills'>
         <SkillLayout title='Languages' skills={languages} />
