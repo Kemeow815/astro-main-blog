@@ -153,7 +153,7 @@ export const integ: IntegrationUserConfig = {
     applyTip: {
       name: theme.title,
       desc: '每一段旅行都有终点',
-      url: 'https://myblog.kemiao.online/',
+      url: 'https://kmblog.kemeow.top/',
       avatar: 'https://cravatar.cn/avatar/56CD72B5460ECAA08DDFFEA9562F5629'
     }
   },
