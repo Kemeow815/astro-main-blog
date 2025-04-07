@@ -36,14 +36,15 @@ import { Collapse } from 'astro-pure/user'
 
 　　点击<kbd>Copy Snippet</kbd>​,就可以，记住在粘贴的时候是我画线里面的部分，双引号都不需要 ，因为要设置环境变量。
 
-　　	2.3 在创建好数据库以后，回到主页面的<kbd>Overview</kbd>​，然后右上角有一个<kbd>Add New</kbd>​选择添加<kbd>Project</kbd>​，选择你<kbd>Fork</kbd>​的<kbd>umami</kbd>​，添加即可。  
-	2.4 设置环境变量，`DATABASE_URL`​和`HASH_SALT`​和`TRACKER_SCRIPT_NAME`​，其中`DATABASE_URL`​的值就是上面划线的部分，其他的两个环境变量都是对应的值是`String`​自己可以随意定义。  
+　　	2.3 在创建好数据库以后，回到主页面的<kbd>Overview</kbd>​，然后右上角有一个<kbd>Add New</kbd>​选择添加<kbd>Project</kbd>​，选择你<kbd>Fork</kbd>​的<kbd>umami</kbd>​，添加即可。 
+
+	    2.4 设置环境变量，`DATABASE_URL`​和`HASH_SALT`​和`TRACKER_SCRIPT_NAME`​，其中`DATABASE_URL`​的值就是上面划线的部分，其他的两个环境变量都是对应的值是`String`​自己可以随意定义。  
 
 　　	2.5 设置好以后点击<kbd>Deploy</kbd>​，等待大约两分钟左右，自动部署完成，部署完成以后可以通过下图种面板上面给的链接可以直接访问。
 
 ![](https://s2.loli.net/2025/04/06/ahX2wHLrfYAD7ZW.webp)
 
-　　	2.4 打开以后会跳出登录地址，默认的登录密码是<kbd>adminumami</kbd>​，登录进去以后，设置给自己密码修改了，然后就是设置里面添加网站，给你要统计的网站添加进去，到此，别人访问你的网站你可以通过面板看到统计数据了。
+　　	2.6 打开以后会跳出登录地址，默认的登录密码是<kbd>adminumami</kbd>​，登录进去以后，设置给自己密码修改了，然后就是设置里面添加网站，给你要统计的网站添加进去，到此，别人访问你的网站你可以通过面板看到统计数据了。
 
 ## 第二部分：Umami+Cloudflare worker这一部分主要是让你的博客上面能展示的访问数据，效果如下：
 
