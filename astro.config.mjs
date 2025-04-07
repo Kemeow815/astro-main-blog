@@ -25,7 +25,7 @@ import config from './src/site.config.ts'
 // https://astro.build/config
 export default defineConfig({
   // Top-Level Options
-  site: 'https://cworld0.com',
+  site: 'https://kemeow.top',
   // base: '/docs',
   trailingSlash: 'never',
 
