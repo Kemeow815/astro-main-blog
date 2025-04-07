@@ -57,6 +57,9 @@ export const theme: ThemeUserConfig = {
       { title: '博客', link: '/blog' },
       { title: '项目', link: '/projects' },
       { title: '友链', link: '/links' },
+      { title: 'TG说说', link: 'https://shuoshuo.kemiao.online' },
+      { title: 'memos说说', link: 'https://moment.kemiao.online/' },
+      { title: '音乐', link: 'https://music.kemiao.online' },
       { title: '关于', link: '/about' },
       // { title: 'Travelling', link: 'https://www.travellings.cn/go.html' }
     ]
