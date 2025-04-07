@@ -30,7 +30,7 @@
     "@tailwindcss/typography": "^0.5.15",
     "@types/mdast": "^4.0.4",
     "@waline/client": "^3.4.1",
-    "astro": "^5.0.5",
+    "astro": "^5.6.1",
     "astro-pure": "1.2.3",
     "hast": "^1.0.0",
     "hastscript": "^9.0.1",
