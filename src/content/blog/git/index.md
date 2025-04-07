@@ -3,8 +3,10 @@ title: Git 同步上游仓库的更新
 description: 使用一个 Github Template 创建了我自己的仓库，需要同步一下补丁更新，总不能自己手抄一遍吧，搜了一下解决方案。记录一下。
 publishDate: 2025-04-04
 updatedDate: 2025-04-04
-cover: https://s2.loli.net/2025/03/28/ajctXLMzs6AuTgq.jpg
-tags: [Git, GitHub]
+heroImage: { src: './gitcover.jpg', color: '#4891B2' }
+tags: 
+  - Git
+  - GitHub
 language: zh-CN
 comment: true
 author: 克喵爱吃卤面
