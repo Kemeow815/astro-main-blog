@@ -6,16 +6,16 @@ import { Button, Collapse, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import ProjectSection from '@/components/projects/ProjectSection.astro'
 import Sponsors from '@/components/projects/Sponsors.astro'
-import alipay from '@/assets/alipay-qrcode.jpg'
+import alipay from 'https://s2.loli.net/2025/04/13/HYrnNFOKDZPSv4p.jpg'
 import KeyIcon from '@/assets/icons/key.svg'
-import wechat from '@/assets/wechat-qrcode.jpg'
+import wechat from 'https://s2.loli.net/2025/04/13/HQ4lbFfJkpU2R9V.jpg'
 import config from '@/site-config'
 
 const headings = [
-  { depth: 2, slug: 'applications', text: 'Applications' },
+  // { depth: 2, slug: 'applications', text: 'Applications' },
   { depth: 2, slug: 'programs', text: 'Programs' },
-  { depth: 2, slug: 'learnings', text: 'Learnings' },
-  { depth: 2, slug: 'others', text: 'Others' },
+  // { depth: 2, slug: 'learnings', text: 'Learnings' },
+  // { depth: 2, slug: 'others', text: 'Others' },
   // { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
   { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
 ]
@@ -38,15 +38,15 @@ const headings = [
     <Icon class='size-5' name='receive-money' slot='before' />
   </Button>
 
-  <h2 id='applications'>Applications</h2>
+  <!-- <h2 id='applications'>Applications</h2>
   <ProjectSection
     project={[
       {
-        name: '➕ Pure New Tab [Browser Extension]',
-        description: 'A open-source, clean and minimalistic new tab page extension',
+        name: '克喵的音乐播放器',
+        description: '基于HeoMusic的轻量级音乐播放器',
         links: [
-          { type: 'github', href: 'https://github.com/cworld1/pure-new-tab' },
-          { type: 'site', href: 'https://cworld0.com/blog/pure-new-tab' }
+          { type: 'github', href: 'https://github.com/Kemeow815/HeoMusic' },
+          { type: 'site', href: 'https://music.kemiao.online' }
         ]
       },
       {
@@ -91,7 +91,7 @@ const headings = [
         links: [{ type: 'github', href: 'https://github.com/cworld1/tcm' }]
       }
     ]}
-  />
+  /> -->
   <!-- <Collapse title='Some old projects'>
     <ProjectSection
       project={[
@@ -140,71 +140,93 @@ const headings = [
   <ProjectSection
     project={[
       {
-        name: '🎨 Astro Theme Pure',
-        description: 'A simple, fast and powerful blog theme built by Astro',
+        name: '🎨 博客源码',
+        description: '基于cworld1的博客',
         links: [
-          { type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
-          { type: 'site', href: 'https://astro-pure.js.org/' },
-          { type: 'doc', href: 'https://astro-pure.js.org/docs/list' },
-          { type: 'release', href: 'https://www.npmjs.com/package/astro-pure' }
+          { type: 'github', href: 'https://github.com/Kemeow815/astro-main-blog' },
+          { type: 'site', href: 'https://kmblog.kemeow.top' }
         ]
       },
       {
-        name: '🏓 pingpong-calculation',
-        description: 'A calculation of pingpong play sport using go and rust',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/pingpong-calculation' }]
+        name: 'astro 源码',
+        description: 'cworld1的博客主题',
+        links: [{ type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' }]
       },
+
       {
-        name: '🏓 pingpong-simulation',
-        description: 'A simulation and calculation of pingpong play sport using unity 3d',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/pingpong-simulation' }]
-      },
-      {
-        name: '🤖 Arknights Telegram Bot',
-        description: 'Telegram Bot for Arknights',
+        name: '克喵的主页',
+        description: '基于 nuxt3 的个人主页',
         links: [
-          { type: 'github', href: 'https://github.com/IJNKAWAKAZE/arknights_bot' },
-          { type: 'site', href: 'https://t.me/PtiIopsis_bot' },
-          {
-            type: 'doc',
-            href: 'https://github.com/IJNKAWAKAZE/arknights_bot/blob/main/docs/Development.md'
-          }
+          { type: 'github', href: 'https://github.com/Kemeow815/blog-homepage-v5' },
+          { type: 'site', href: 'https://www.kemiao.online' }
         ]
       },
       {
-        name: '🤖 PaiGram',
-        description: 'Telegram robot, query the official Genshin information',
+        name: '克喵的音乐播放器',
+        description: '基于 HeoMusic 的音乐播放器',
         links: [
-          { type: 'github', href: 'https://github.com/PaiGramTeam/PaiGram' },
-          { type: 'site', href: 'https://t.me/PaimonMasterBot' },
-          { type: 'doc', href: 'https://docs.paimon.vip/' }
+          { type: 'github', href: 'https://github.com/Kemeow815/HeoMusic' },
+          { type: 'site', href: 'https://music.kemiao.online' }
         ]
       },
       {
-        name: '📊 Novel Data',
-        description: 'The data repository of novel analysis',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/novel-data' }]
-      },
-      {
-        name: '🧮 N Queens Problem',
-        description: 'A solution of solving N Queens Problem',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/nqueens-problem' }]
-      },
-      {
-        name: '🛠️ Gaussian NB',
-        description:
-          'Simulating the Parsimonious Bayesian Algorithm with Python and Finding the Probability Prediction of Breast Cancer ',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/gaussian-nb' }]
-      },
-      {
-        name: '📊 Business Data Analysis',
-        description:
-          'Using python and jupyter notebook to analyze the data of electrical appliances, and then using the data to predict the sales of electrical appliances',
+        name: '克喵的TG说说',
+        description: '基于Telegram频道的说说',
         links: [
-          { type: 'github', href: 'https://github.com/cworld1/business-data' },
-          { type: 'site', href: 'https://github.com/cworld1/business-data/blob/main/main.ipynb' }
+          { type: 'github', href: 'https://github.com/Kemeow815/BroadcastChannel' },
+          { type: 'site', href: 'https://shuoshuo.kemiao.online' }
         ]
-      }
+      },
+      {
+        name: '克喵的memos说说',
+        description: '基于memos说说的静态页面',
+        links: [
+          { type: 'github', href: 'https://github.com/Kemeow815/memos-stellar' },
+          { type: 'site', href: 'https://memos.kemiaosw.top' }
+        ]
+      },
+      {
+        name: '克喵的影视播放器',
+        description: '一键部署的影视站',
+        links: [
+          { type: 'github', href: 'https://github.com/Kemeow815/LibreTV-kemiao' },
+          { type: 'site', href: 'https://tv.kemeow.top' }
+        ]
+      },
+      {
+        name: '克喵的网站监测',
+        description: '优雅的站点状态监控面板',
+        links: [
+          { type: 'github', href: 'https://github.com/Kemeow815/Uptime-Status-kemiao' },
+          { type: 'site', href: 'https://montor.kemiaofx.cn' }
+        ]
+      },
+      // {
+      //   name: '克喵的图床',
+      //   description: '基于GitHub的图床',
+      //   links: [
+      //   ]
+      // },
+      // {
+      //   name: '🧮 N Queens Problem',
+      //   description: 'A solution of solving N Queens Problem',
+      //   links: [{ type: 'github', href: 'https://github.com/cworld1/nqueens-problem' }]
+      // },
+      // {
+      //   name: '🛠️ Gaussian NB',
+      //   description:
+      //     'Simulating the Parsimonious Bayesian Algorithm with Python and Finding the Probability Prediction of Breast Cancer ',
+      //   links: [{ type: 'github', href: 'https://github.com/cworld1/gaussian-nb' }]
+      // },
+      // {
+      //   name: '📊 Business Data Analysis',
+      //   description:
+      //     'Using python and jupyter notebook to analyze the data of electrical appliances, and then using the data to predict the sales of electrical appliances',
+      //   links: [
+      //     { type: 'github', href: 'https://github.com/cworld1/business-data' },
+      //     { type: 'site', href: 'https://github.com/cworld1/business-data/blob/main/main.ipynb' }
+      //   ]
+      // }
     ]}
   />
   <!-- <Collapse title='Some old projects'>
@@ -227,7 +249,7 @@ const headings = [
     />
   </Collapse> -->
 
-  <h2 id='learnings'>Learnings</h2>
+  <!-- <h2 id='learnings'>Learnings</h2>
   <ProjectSection
     class='my-2'
     project={[
@@ -315,7 +337,7 @@ const headings = [
       //   ]
       // }
     ]}
-  />
+  /> -->
 
   <!-- <Collapse title='Some old projects'>
     <ProjectSection
@@ -339,7 +361,7 @@ const headings = [
     />
   </Collapse> -->
 
-  <h2 id='others'>Others</h2>
+  <!-- <h2 id='others'>Others</h2>
   <ProjectSection
     project={[
       {
@@ -358,7 +380,7 @@ const headings = [
         links: [{ type: 'github', href: 'https://github.com/cworld1/cworld1' }]
       }
     ]}
-  />
+  /> -->
 
   <!-- gpg signature
   <h2 id='gpg-signature'>GPG Signature</h2>
