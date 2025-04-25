@@ -7,7 +7,7 @@ export const theme: ThemeUserConfig = {
   /** Will be used in index page & copyright declaration */
   author: '克喵爱吃卤面',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: '每一段旅行都有终点~',
+  description: '奇迹只能一时，命运总是漫长。',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
@@ -150,7 +150,10 @@ export const integ: IntegrationUserConfig = {
       // { date: '2024-11-19', content: "[Wayne's Blog] lost" },
       // { date: '2024-11-19', content: '[流年轻迹] lost' },
       // { date: '2024-11-26', content: '[字节君] stagnated' },
-      // { date: '2025-01-21', content: '[一叶竹] returned' }
+      // { date: '2025-01-21', content: '[一叶竹] returned' },
+      // { date: '2025-04-06', content: '[L1nSn0w] returned' },
+      // { date: '2025-04-06', content: '[伍十七] lost' },
+      // { date: '2025-04-06', content: '[LanM蓝莓Blog] lost' }
     ],
     // Yourself link info
     applyTip: {
