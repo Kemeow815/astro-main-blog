@@ -78,6 +78,7 @@ export const theme: ThemeUserConfig = {
     social: {
       github: 'https://github.com/Kemeow815',
       telegram: 'https://t.me/kemiaojun',
+      x: 'https://twitter.com/kemiaosw',
       coolapk: 'http://www.coolapk.com/u/28712393',
       email: 'mailto:kemiaofx@163.com',
     }
@@ -89,7 +90,7 @@ export const theme: ThemeUserConfig = {
     blogPageSize: 8,
     externalLinkArrow: true, // show external link arrow
     // Currently support weibo, x, bluesky
-    share: ['weibo', 'bluesky']
+    share: ['weibo', 'x', 'bluesky']
   }
 }
 
@@ -160,7 +161,7 @@ export const integ: IntegrationUserConfig = {
       name: theme.title,
       desc: '每一段旅行都有终点',
       url: 'https://kmblog.kemeow.top/',
-      avatar: 'https://cravatar.cn/avatar/56CD72B5460ECAA08DDFFEA9562F5629'
+      avatar: 'https://s2.loli.net/2025/04/21/OMNycVpidhQt92r.png'
     }
   },
   // Enable page search function
