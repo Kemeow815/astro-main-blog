@@ -40,12 +40,7 @@ export default defineConfig({
   // adapter: node({ mode: 'standalone' }),
   // ---
 
-  image: {
-    service: {
-      entrypoint: 'astro/assets/services/sharp'
-    },
-    domains: ['ghchart.rshah.org']
-  },
+  image: { service: { entrypoint: 'astro/assets/services/sharp' }, domains: ['ghchart.rshah.org'] },
 
   integrations: [
     // astro-pure will automatically add sitemap, mdx & tailwind
@@ -53,25 +48,18 @@ export default defineConfig({
     // mdx(),
     // tailwind({ applyBaseStyles: false }),
     AstroPureIntegration(config),
-    (await import('@playform/compress')).default({
-      SVG: false,
-      Exclude: ['index.*.js']
-    }),
+    (await import('@playform/compress')).default({ SVG: false, Exclude: ['index.*.js'] }),
 
     // Temporary fix vercel adapter
     // static build method is not needed
-    outputCopier({
-      integ: ['sitemap', 'pagefind']
-    })
+    outputCopier({ integ: ['sitemap', 'pagefind'] })
   ],
   // root: './my-project-directory',
 
   // Prefetch Options
   prefetch: true,
   // Server Options
-  server: {
-    host: true
-  },
+  server: { host: true },
   // Markdown Options
   markdown: {
     rehypePlugins: [
@@ -87,10 +75,7 @@ export default defineConfig({
     ],
     // https://docs.astro.build/en/guides/syntax-highlighting/
     shikiConfig: {
-      themes: {
-        light: 'github-light',
-        dark: 'github-dark'
-      },
+      themes: { light: 'github-light', dark: 'github-dark' },
       transformers: [
         transformerNotationDiff(),
         transformerNotationHighlight(),
@@ -100,7 +85,5 @@ export default defineConfig({
         addCopyButton(2000)
       ]
     }
-  },
-  experimental: {
   }
 })
