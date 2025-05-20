@@ -24,7 +24,7 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: 'https://img.kemiaosw.top/v2/EXqUNcA.jpeg',
+    src: 'https://cn.cravatar.com/avatar/1F6C8947D35A8186A1647009BA8BC5F2?size=256',
     alt: 'Avatar'
   },
 
@@ -80,7 +80,7 @@ export const theme: ThemeUserConfig = {
       telegram: 'https://t.me/kemiaojun',
       x: 'https://twitter.com/kemiaosw',
       coolapk: 'http://www.coolapk.com/u/28712393',
-      email: 'mailto:kemiaofx@163.com',
+      email: 'mailto:me@kemiaosw.top',
     }
   },
 
@@ -161,7 +161,7 @@ export const integ: IntegrationUserConfig = {
       name: theme.title,
       desc: '每一段旅行都有终点',
       url: 'https://kmblog.kemeow.top/',
-      avatar: 'https://s2.loli.net/2025/04/21/OMNycVpidhQt92r.png'
+      avatar: 'https://cn.cravatar.com/avatar/1F6C8947D35A8186A1647009BA8BC5F2?size=256'
     }
   },
   // Enable page search function
