@@ -58,7 +58,8 @@ export const theme: ThemeUserConfig = {
       { title: '项目', link: '/projects' },
       { title: '友链', link: '/links' },
       { title: 'TG说说', link: 'https://shuoshuo.kemiao.online' },
-      { title: 'memos说说', link: 'https://moment.kemiao.online/' },
+      { title: '朋友圈', link: 'https://pyq.kemiao.online/' },
+      { title: '相册', link: 'https://photo.kemiao.xyz' },
       { title: '音乐', link: 'https://music.kemiao.online' },
       { title: '关于', link: '/about' },
       // { title: 'Travelling', link: 'https://www.travellings.cn/go.html' }
@@ -67,11 +68,25 @@ export const theme: ThemeUserConfig = {
 
   /** Configure the footer of your site. */
   footer: {
-    // Registration information for ICP (optional)
-    registration: {
-      url: '',
-      text: ''
-    },
+    links: [
+      // Registration link
+      {
+        title: '萌备20240147',
+        link: 'https://icp.gov.moe/?keyword=20240147',
+        style: 'text-sm' // Uno/TW CSS class
+      },
+      {
+        title: 'Travelling',
+        link: 'https://www.travellings.cn/go.html',
+        style: 'text-sm'
+      },
+      // Privacy Policy link
+      {
+        title: 'Site Policy',
+        link: '/terms/list',
+        pos: 2 // position set to 2 will be appended to copyright line
+      }
+    ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
@@ -157,12 +172,12 @@ export const integ: IntegrationUserConfig = {
       // { date: '2025-04-06', content: '[LanM蓝莓Blog] lost' }
     ],
     // Yourself link info
-    applyTip: {
-      name: theme.title,
-      desc: '每一段旅行都有终点',
-      url: 'https://kmblog.kemeow.top/',
-      avatar: 'https://cn.cravatar.com/avatar/1F6C8947D35A8186A1647009BA8BC5F2?size=256'
-    }
+    applyTip: [
+      { name: 'Name', val: theme.title },
+      { name: 'Desc', val: '求知若愚，虚怀若谷' },
+      { name: 'Link', val: 'https://cworld0.com/' },
+      { name: 'Avatar', val: 'https://cravatar.cn/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200' }
+    ]
   },
   // Enable page search function
   pagefind: true,
