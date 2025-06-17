@@ -28,7 +28,8 @@
     "astro": "^5.8.1",
     "astro-pure": "1.2.7",
     "sharp": "^0.34.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "unocss": "^66.2.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",

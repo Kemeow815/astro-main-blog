@@ -1,4 +1,4 @@
-import { defineConfig, presetTypography, presetUno } from 'unocss'
+import { defineConfig, presetTypography } from 'unocss'
 
 const fg = 'hsl(var(--foreground) / var(--un-text-opacity, 1))'
 const fgMuted = 'hsl(var(--muted-foreground) / var(--un-text-opacity, 1))'
@@ -154,7 +154,6 @@ const themeColors = {
 
 export default defineConfig({
   presets: [
-    presetUno(), // required
     presetTypography(typographyConfig)
   ],
   rules: [],

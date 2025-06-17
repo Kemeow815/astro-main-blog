@@ -71,8 +71,8 @@ export const theme: ThemeUserConfig = {
     links: [
       // Registration link
       {
-        title: '萌备20240147',
-        link: 'https://icp.gov.moe/?keyword=20240147',
+        title: '萌备20250530',
+        link: 'https://icp.gov.moe/?keyword=20250530',
         style: 'text-sm' // Uno/TW CSS class
       },
       {
